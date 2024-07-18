@@ -1,0 +1,91 @@
+.np-form {
+    background-color: gray;
+    border-radius: 10px;
+    padding: 20px 50px;
+    position: fixed;
+    right: 0;
+    transition: bottom .3s ease;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &.np-form--closed {
+        bottom: -150px;
+    }
+
+    &.np-form--opened {
+        bottom:50px;
+    }
+
+    p {
+        letter-spacing:  0.03em;
+        font-size: 1.2em;
+    }
+}
+
+
+.np-form .close-icon-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer; 
+}
+
+.np-form .close-icon-btn:hover{
+    opacity: 0.8;
+    transform: scale(0.9);
+}
+
+
+/*Le titre:*/
+form .newsletter-title {
+    font-size: 20px;
+}
+
+/*champ de recherche*/
+form .email-input,
+form .name-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgb(193, 193, 193);
+    outline: none;
+}
+
+form input#btn-suivant,
+form input#btn-submit{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+form input#btn-suivant:hover,
+form input#btn-submit:hover {
+    background-color: orange;
+    color: gray;
+    transform: scale(0.95);
+}
+
+
+/*afficher/cacher les section du formulaire*/
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+/*La valeur d'utilisateur (message succes)*/
+.np-form .data-client {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
